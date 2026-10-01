@@ -1,0 +1,37 @@
+import math
+print("==Константы==")
+print(f"math.pi  = {math.pi}")
+print(f"math.e   = {math.e}")
+print(f"math.tau = {math.tau}       (tau = 2*pi)")
+print(f"math.inf = {math.inf}, -math.inf = {-math.inf}, math.nan = {math.nan}")
+
+print("\n==Округления (в чем разница?)==")
+x = 7.6
+print(f"math.floor(x) = {math.floor(x)}  (вниз)")
+print(f"math.ceil(x)  = {math.ceil(x)}   (вверх)")
+print(f"round(x)      = {round(x)}       (банковское округление)")
+print(f"math.trunc(x) = {math.trunc(x)}  (отбрасывание дробной части)")
+print(f"round(2.5)={round(2.5)}, round(3.5)={round(3.5)}  <- почему по-разному?")
+
+print("\n==Степени, корни, логарифмы==")
+print(f"math.sqrt(144) = {math.sqrt(144)}")
+print(f"math.pow(2,10) = {math.pow(2, 10)}   (всегда float)")
+print(f"2 ** 10        = {2 ** 10}           (int, точное)")
+print(f"math.exp(1)    = {math.exp(1)}")
+print(f"math.log(1024, 2) = {math.log(1024, 2)}")
+print(f"math.log10(1000)  = {math.log10(1000)}")
+print(f"math.log2(1024)   = {math.log2(1024)}")
+
+print("\n==Факториал, НОД, НОК, комбинаторика==")
+print(f"math.factorial(10)   = {math.factorial(10)}")
+print(f"math.gcd(48, 180)    = {math.gcd(48, 180)}")
+print(f"math.lcm(4, 6)       = {math.lcm(4, 6)}")
+print(f"math.comb(10, 3)     = {math.comb(10, 3)}   (сочетания)")
+print(f"math.perm(10, 3)     = {math.perm(10, 3)}   (размещения)")
+print(f"math.isqrt(50)       = {math.isqrt(50)}     (целый корень)")
+
+print("\n==Точность вещественных чисел==")
+print(f"0.1 + 0.2 == 0.3 -> {0.1 + 0.2 == 0.3}")
+print(f"math.isclose(0.1+0.2, 0.3) = {math.isclose(0.1 + 0.2, 0.3)}")
+print(f"math.fsum([0.1]*10) = {math.fsum([0.1]*10)} vs sum() = {sum([0.1]*10)}")
+print(f"math.copysign(5, -1) = {math.copysign(5, -1)}")
